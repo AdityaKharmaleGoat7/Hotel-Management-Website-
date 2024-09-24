@@ -25,3 +25,21 @@ The **Hotel Management System** is a web-based application designed to simplify 
 
 - Node.js
 - MongoDB
+
+- ### Steps to Run the Application
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/hotel-management.git
+   cd hotel-management
+
+   npm install
+   mongod
+   node server.js
+   nodemon server.js
+   http://localhost:5000/login.html
+
+
+Feel free to replace `yourusername` with your actual GitHub username, and adjust any other details as necessary. You can save this content in a file named `README.md` in your project repository.
+
+
