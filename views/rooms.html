@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Rooms</title>
+</head>
+<body>
+    <h2>Available Rooms</h2>
+    <div id="room-list"></div>
+
+    <script>
+        fetch('/rooms/available')
+            .then(response => response.json())
+            .then(data => {
+                const roomList = document.getElementById('room-list');
+                data.forEach(room => {
+                    roomList.innerHTML += `<p>Room Number: ${room.roomNumber}, Rent: ${room.rent}</p>`;
+                });
+            });
+    </script>
+</body>
+</html>
